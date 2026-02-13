@@ -1,0 +1,88 @@
+---
+name: project-setup
+description: Pokitwork 프로젝트 지식베이스 초기 설정. AGENTS.md 생성, 에이전트별 설정 파일 구성, 프로젝트 컨벤션 부트스트랩. "프로젝트 셋업", "지식베이스 설정", "AGENTS.md 생성" 등의 요청 시 사용한다.
+---
+
+# Pokitwork 프로젝트 셋업
+
+이 스킬은 새 프로젝트 또는 기존 프로젝트에 Pokitwork 표준 설정을 적용한다.
+
+## 실행 절차
+
+### 1. AGENTS.md 생성
+
+프로젝트 루트에 `AGENTS.md` 파일을 아래 템플릿으로 생성한다.
+이 파일은 모든 AI 코딩 에이전트가 자동으로 읽는 소스 오브 트루스이다.
+
+```markdown
+# Pokitwork
+
+스마트 인사/연차 관리 시스템.
+
+## 기술 스택
+
+- **프레임워크**: SvelteKit 2 + Svelte 5
+- **UI**: shadcn-svelte + Tailwind CSS v4
+- **DB**: PostgreSQL + Drizzle ORM
+- **인증**: better-auth (Email OTP)
+- **패키지 매니저**: deno
+- **검증**: Zod v4
+
+## 코드 스타일
+
+- 최소한의 깔끔한 주석. 의도가 코드만으로 명확하지 않을 때만 작성.
+- 불필요한 주석, 당연한 내용의 주석은 작성하지 않는다.
+
+## 컴포넌트 규칙
+
+- `$lib/components/ui/` — shadcn 전용. 수동 수정 금지.
+- `$lib/components/` — 페이지 간 공통 커스텀 컴포넌트만.
+- `src/routes/[page]/` — 해당 페이지 전용 컴포넌트.
+- 마크업은 `+page.svelte`에서 바로 작성. 미리 추상화하지 않는다.
+
+## 스킬 설치 안내
+
+이 프로젝트의 상세 규칙은 `pokitwork-knowledge-skills` 리포에 Agent Skills로 관리된다.
+스킬이 설치되지 않았다면 아래 명령으로 설치:
+
+- Claude: `/plugin marketplace add dev-goraebap/pokitwork-knowledge-skills`
+- Gemini: `gemini skill install https://github.com/dev-goraebap/pokitwork-knowledge-skills --path skills/<skill-name>`
+- Codex: `$skill-installer`로 `https://github.com/dev-goraebap/pokitwork-knowledge-skills` 설치
+```
+
+### 2. 에이전트별 설정 파일
+
+사용 중인 에이전트에 따라 추가 설정 파일을 생성한다.
+
+#### Claude Code 사용자
+
+`.claude/CLAUDE.md` 파일을 아래 내용으로 생성/수정:
+
+```markdown
+@AGENTS.md
+
+## Claude 전용 설정
+
+Svelte MCP 서버를 사용할 수 있으며, Svelte 5 및 SvelteKit 공식 문서에 접근 가능하다.
+
+### MCP 도구
+
+1. **list-sections**: Svelte/SvelteKit 문서 섹션 목록 조회. 관련 작업 시 가장 먼저 호출.
+2. **get-documentation**: 특정 섹션의 전체 문서. 관련 모든 섹션을 한 번에 가져올 것.
+3. **svelte-autofixer**: Svelte 코드 이슈 분석. 코드 작성 시 반드시 사용.
+4. **playground-link**: Svelte Playground 링크 생성. 프로젝트 파일에 직접 작성한 경우 호출 금지.
+```
+
+#### Gemini CLI 사용자
+
+`.gemini/settings.json`의 `context.fileName`에 `"AGENTS.md"` 추가.
+
+#### OpenAI Codex 사용자
+
+`AGENTS.md`가 프로젝트 루트에 있으면 자동으로 읽힌다. 추가 설정 불필요.
+
+### 3. 완료 확인
+
+- [ ] `AGENTS.md` 파일이 프로젝트 루트에 존재
+- [ ] 사용 중인 에이전트의 설정 파일이 올바르게 구성됨
+- [ ] pokitwork-knowledge-skills 스킬이 설치됨
