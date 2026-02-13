@@ -1,6 +1,6 @@
 # Pokitwork Knowledge Skills
 
-Pokitwork 프로젝트의 공유 지식베이스. [Agent Skills (SKILL.md)](https://github.com/anthropics/agent-skills) 표준을 따르며, Claude, Gemini CLI, OpenAI Codex 등 모든 AI 코딩 에이전트에서 사용할 수 있다.
+Pokitwork 프로젝트의 공유 지식베이스. [Agent Skills (SKILL.md)](https://agentskills.io) 표준을 따르며, 모든 AI 코딩 에이전트에서 사용할 수 있다.
 
 ## Skills
 
@@ -16,19 +16,32 @@ Pokitwork 프로젝트의 공유 지식베이스. [Agent Skills (SKILL.md)](http
 
 ### Claude Code
 
+`.claude/skills/` 에 설치된다. ([문서](https://code.claude.com/docs/en/skills))
+
 ```bash
 /skills install https://github.com/dev-goraebap/pokitwork-knowledge-skills
 ```
 
-### Gemini CLI
+### Antigravity
+
+`.antigravity/skills/` 에 설치된다. ([문서](https://antigravity.google/docs/skills))
 
 ```bash
-gemini skill install https://github.com/dev-goraebap/pokitwork-knowledge-skills
+/skills install https://github.com/dev-goraebap/pokitwork-knowledge-skills
+```
+
+### Cursor
+
+`.cursor/skills/` 에 설치된다. ([문서](https://docs.cursor.com/context/skills))
+
+```bash
+/skills install https://github.com/dev-goraebap/pokitwork-knowledge-skills
 ```
 
 ### OpenAI Codex
 
+`.agents/skills/` 에 설치된다. ([문서](https://developers.openai.com/codex/skills))
+
 ```bash
-# .agents/skills/ 에 클론
-git clone https://github.com/dev-goraebap/pokitwork-knowledge-skills .agents/skills/pokitwork
+$skill-installer install skills from https://github.com/dev-goraebap/pokitwork-knowledge-skills
 ```
