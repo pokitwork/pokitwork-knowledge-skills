@@ -32,7 +32,7 @@ Pokitwork 프로젝트의 공유 지식베이스. [Agent Skills (SKILL.md)](http
 
 ### Cursor
 
-`.cursor/skills/` 에 설치된다. ([문서](https://docs.cursor.com/context/skills))
+`.cursor/skills/` 에 설치된다. ([문서](https://cursor.com/ko/docs/context/skills))
 
 ```bash
 /skills install https://github.com/dev-goraebap/pokitwork-knowledge-skills
