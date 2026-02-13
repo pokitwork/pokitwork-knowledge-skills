@@ -54,9 +54,9 @@ Svelte MCP 서버가 설정되어 있으면, 아래 도구를 사용할 수 있�
 이 프로젝트의 상세 규칙은 `pokitwork-knowledge-skills` 리포에 Agent Skills로 관리된다.
 스킬이 설치되지 않았다면 아래 명령으로 설치:
 
-- Claude: `/plugin marketplace add dev-goraebap/pokitwork-knowledge-skills`
-- Gemini: `gemini skill install https://github.com/dev-goraebap/pokitwork-knowledge-skills --path skills/<skill-name>`
-- Codex: `$skill-installer`로 `https://github.com/dev-goraebap/pokitwork-knowledge-skills` 설치
+- Claude: `/plugin marketplace add pokitwork/pokitwork-knowledge-skills`
+- Gemini: `gemini skill install https://github.com/pokitwork/pokitwork-knowledge-skills --path skills/<skill-name>`
+- Codex: `$skill-installer`로 `https://github.com/pokitwork/pokitwork-knowledge-skills` 설치
 ```
 
 ### 2. 에이전트별 설정 파일

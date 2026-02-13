@@ -19,7 +19,7 @@ Pokitwork 프로젝트의 공유 지식베이스. [Agent Skills (SKILL.md)](http
 `.claude/skills/` 에 설치된다. ([문서](https://code.claude.com/docs/en/skills))
 
 ```bash
-/skills install https://github.com/dev-goraebap/pokitwork-knowledge-skills
+/skills install https://github.com/pokitwork/pokitwork-knowledge-skills
 ```
 
 ### Antigravity
@@ -27,7 +27,7 @@ Pokitwork 프로젝트의 공유 지식베이스. [Agent Skills (SKILL.md)](http
 `.antigravity/skills/` 에 설치된다. ([문서](https://antigravity.google/docs/skills))
 
 ```bash
-/skills install https://github.com/dev-goraebap/pokitwork-knowledge-skills
+/skills install https://github.com/pokitwork/pokitwork-knowledge-skills
 ```
 
 ### Cursor
@@ -35,7 +35,7 @@ Pokitwork 프로젝트의 공유 지식베이스. [Agent Skills (SKILL.md)](http
 `.cursor/skills/` 에 설치된다. ([문서](https://cursor.com/ko/docs/context/skills))
 
 ```bash
-/skills install https://github.com/dev-goraebap/pokitwork-knowledge-skills
+/skills install https://github.com/pokitwork/pokitwork-knowledge-skills
 ```
 
 ### OpenAI Codex
@@ -43,5 +43,5 @@ Pokitwork 프로젝트의 공유 지식베이스. [Agent Skills (SKILL.md)](http
 `.agents/skills/` 에 설치된다. ([문서](https://developers.openai.com/codex/skills))
 
 ```bash
-$skill-installer install skills from https://github.com/dev-goraebap/pokitwork-knowledge-skills
+$skill-installer install skills from https://github.com/pokitwork/pokitwork-knowledge-skills
 ```
