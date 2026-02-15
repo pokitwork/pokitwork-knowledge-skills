@@ -1,4 +1,4 @@
-# Pokitwork Knowledge Skills
+# Pokitwork Knowledge Base
 
 포킷워크 도메인 지식베이스. [Agent Skills (SKILL.md)](https://agentskills.io) 표준을 따르며, 모든 AI 코딩 에이전트에서 사용할 수 있다.
 
@@ -14,13 +14,13 @@
 ## 설치
 
 ```bash
-npx skills add pokitwork/pokitwork-knowledge-skills
+npx skills add pokitwork/pokitwork-knowledge-base
 ```
 
 ## 갱신
 
 ```bash
-npx skills add pokitwork/pokitwork-knowledge-skills
+npx skills add pokitwork/pokitwork-knowledge-base
 ```
 
 ## 기여

@@ -1,4 +1,4 @@
-# Pokitwork Knowledge Skills
+# Pokitwork Knowledge Base
 
 포킷워크 도메인 지식베이스. HR/연차 관리 시스템의 비즈니스 요구사항을 서브도메인별로 관리한다.
 
@@ -14,4 +14,4 @@ notice/SKILL.md         ← 공지/알림 (공지사항, 카테고리, Inbox)
 ## 스킬 갱신
 
 도메인 요구사항이 변경되면 해당 SKILL.md를 직접 수정하고 push한다.
-팀원은 `npx skills add pokitwork/pokitwork-knowledge-skills`로 최신 버전을 받는다.
+팀원은 `npx skills add pokitwork/pokitwork-knowledge-base`로 최신 버전을 받는다.
