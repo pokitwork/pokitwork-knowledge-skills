@@ -1,8 +1,3 @@
----
-name: approval
-description: 포킷워크 결재 도메인. 결재선 규칙, 결재 요청, 결재 단계, 수신참조, 알림의 엔티티 정의와 비즈니스 규칙. 결재 관련 기능 구현 시 참고한다.
----
-
 # 결재관리
 
 ## 결재선 규칙 (Approval Chain Rule)
@@ -108,4 +103,4 @@ description: 포킷워크 결재 도메인. 결재선 규칙, 결재 요청, 결
 
 ## 스키마
 
-[DB 스키마 다이어그램](references/schema.md)
+[DB 스키마 다이어그램](approval-schema.md)

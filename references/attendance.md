@@ -1,8 +1,3 @@
----
-name: attendance
-description: 포킷워크 근태관리 도메인. 유연근무제(시차출퇴근, 재택근로), 단축근로(육아기, 임신중)의 엔티티 정의와 비즈니스 규칙. 근태/근무형태 관련 기능 구현 시 참고한다.
----
-
 # 근태관리
 
 ## 유연근무 (Flexible Work)
@@ -49,4 +44,4 @@ description: 포킷워크 근태관리 도메인. 유연근무제(시차출퇴�
 
 ## 스키마
 
-[DB 스키마 다이어그램](references/schema.md)
+[DB 스키마 다이어그램](attendance-schema.md)

@@ -1,8 +1,3 @@
----
-name: organization
-description: 포킷워크 조직관리 도메인. 구성원(직원), 부서, 직책, 프로젝트의 엔티티 정의와 비즈니스 규칙. 구성원/부서/직책/프로젝트 관련 기능 구현 시 참고한다.
----
-
 # 조직관리
 
 ## 구성원 (Member)
@@ -74,4 +69,4 @@ description: 포킷워크 조직관리 도메인. 구성원(직원), 부서, 직
 
 ## 스키마
 
-[DB 스키마 다이어그램](references/schema.md)
+[DB 스키마 다이어그램](organization-schema.md)

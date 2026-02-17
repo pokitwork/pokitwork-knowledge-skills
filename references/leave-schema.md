@@ -32,6 +32,12 @@ erDiagram
         timestamp created_at
     }
 
+    leave_settings {
+        uuid id PK
+        varchar annual_leave_method "hire_date | fiscal_year"
+        timestamp updated_at
+    }
+
     leave_adjustments {
         uuid id PK
         uuid member_id FK
